@@ -20,7 +20,7 @@ public class BlockDrag : MonoBehaviour
     public static float boundary = 0.1f;     //插值最小精度
 
     private Vector3 targetPos;  //插值移动的目标位置
-    private bool flagR = true; //是否归位flag
+    private bool flag; //是否归位flag
 
     private void Start()
     {
@@ -69,38 +69,20 @@ public class BlockDrag : MonoBehaviour
         //transform.position = new Vector3(Lattice.positionX[x], Lattice.positionY[y], transform.position.z);
 
         targetPos = new Vector3(Lattice.positionX[x], Lattice.positionY[y], transform.position.z);
-
+        flag = true;
         Lattice.instance.IsSuccess(index, x, y);
-    }
-
-    private bool MoveBack() //插值移动归位
-    {
-        if (targetPos != transform.position)
-        {
-            transform.position = Vector3.Lerp(transform.position, targetPos, percent);
-
-            if (Mathf.Abs(transform.position.x - targetPos.x) + Mathf.Abs(transform.position.y - targetPos.y) < boundary)
-                transform.position = targetPos;
-
-            return false;
-        }
-        else
-        {
-            return true;
-        }
     }
 
     private void Update()
     {
-        bool flagT = MoveBack();
-
-        if ((!flagR) && flagT)
+        if (targetPos != transform.position&&flag)
         {
-            //未归位到归位瞬间
-
-            print("returned");
+            transform.position = Vector3.Lerp(transform.position, targetPos, percent);
+            if (Mathf.Abs(transform.position.x - targetPos.x) + Mathf.Abs(transform.position.y - targetPos.y) < boundary)
+            {
+                transform.position = targetPos;
+                flag = false;
+            }
         }
-
-        flagR = flagT;
     }
 }
