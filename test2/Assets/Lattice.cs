@@ -1,17 +1,36 @@
 ﻿using UnityEngine;
 
+[System.Serializable]
+public class blockgroup
+{
+    public Vector2Int[] blockPositions;
+    public int[] group;
+}
+[System.Serializable]
+public class successgroup
+{
+    public Vector2Int[] successOffsets;
+    public int[] group;
+}
 public class Lattice : MonoBehaviour
 {
     public static Lattice instance;
     public static float[] positionX;
     public static float[] positionY;
 
-    public Vector2Int[] blockPositions;
-    public Vector2Int[] successOffsets;
+    
+   // public Vector2Int[] blockPositions;
+       
+    //public Vector2Int[] successOffsets;
+
+    public blockgroup bg;
+
+    public successgroup sg;
 
     private int a;
+    private int b;
     private bool isSuccess;
-
+    private bool allSuccess;
     private void Awake()
     {
         instance = this;
@@ -32,12 +51,26 @@ public class Lattice : MonoBehaviour
 
     public void IsSuccess(int index, int x, int y)
     {
-        blockPositions[index] = new Vector2Int(x, y);
         isSuccess = true;
-        for (a = 1; a < blockPositions.Length; ++a)
+        bg.blockPositions[index] = new Vector2Int(x, y);
+        bool[] isuse = new bool[bg.blockPositions.Length];
+        for (a = 0; a < bg.blockPositions.Length; ++a)
         {
-            if (blockPositions[a].x - blockPositions[0].x != successOffsets[a].x || blockPositions[a].y - blockPositions[0].y !=
-                successOffsets[a].y)
+            for (b = 0; b < bg.blockPositions.Length; ++b)
+            {
+                if (bg.group[a] == sg.group[b] && !isuse[b])
+                {
+                    if (bg.blockPositions[a].x - bg.blockPositions[0].x == sg.successOffsets[b].x && bg.blockPositions[a].y - bg.blockPositions[0].y ==
+                    sg.successOffsets[b].y)
+                    {
+                        isuse[b] = true;
+                    }
+                }
+            }
+        }
+        for (a = 0; a < bg.blockPositions.Length; ++a)
+        {
+            if (!isuse[a])
             {
                 isSuccess = false;
                 break;
@@ -45,8 +78,7 @@ public class Lattice : MonoBehaviour
         }
         if (isSuccess)
         {
-            //游戏完成时的动作
-            GameObject.Find("Canvas/Text Success").GetComponent<UnityEngine.UI.Text>().text = "Success";
+            a = 1;
         }
     }
 }
