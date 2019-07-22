@@ -1,0 +1,32 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class close : MonoBehaviour
+{
+    // Start is called before the first frame update
+    private bool flag;
+    public GameObject image;
+    public GameObject b1;
+    public GameObject b2;
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+
+    public void OnClick()
+    {
+        print("click");
+        flag = false;
+        image.SetActive(flag);
+        b1.SetActive(flag);
+        b2.SetActive(flag);
+        flag = !flag;
+    }
+}

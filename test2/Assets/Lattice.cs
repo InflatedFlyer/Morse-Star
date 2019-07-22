@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [System.Serializable]
 public class blockgroup
@@ -78,7 +79,7 @@ public class Lattice : MonoBehaviour
         }
         if (isSuccess)
         {
-            a = 1;
+            SceneManager.LoadScene(1);
         }
     }
 }

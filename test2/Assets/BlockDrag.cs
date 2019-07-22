@@ -26,7 +26,7 @@ public class BlockDrag : MonoBehaviour
     {
         if (camera == null)
         {
-            camera = GameObject.Find("Main Camera").GetComponent<Camera>();
+            camera = GameObject.Find("Camera").GetComponent<Camera>();
         }
 
         targetPos = transform.position;
