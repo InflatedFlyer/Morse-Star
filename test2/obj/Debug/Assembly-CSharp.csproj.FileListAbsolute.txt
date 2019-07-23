@@ -844,3 +844,4 @@ D:\GitHub\Morse-Star\test2\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.ca
 D:\GitHub\Morse-Star\test2\obj\Debug\Assembly-CSharp.csproj.CopyComplete
 D:\GitHub\Morse-Star\test2\obj\Debug\Assembly-CSharp.dll
 D:\GitHub\Morse-Star\test2\obj\Debug\Assembly-CSharp.pdb
+D:\GitHub\Morse-Star\test2\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb

@@ -5,7 +5,7 @@ using UnityEngine;
 public class buttonclick : MonoBehaviour
 {
     // Start is called before the first frame update
-    private bool flag;
+    [HideInInspector] public bool flag;
     public GameObject image;
     public GameObject b1;
     public GameObject b2;
@@ -29,7 +29,7 @@ public class buttonclick : MonoBehaviour
 
     public void OnClick()
     {
-        flag = true;
+        flag = !flag;
         image.SetActive(flag);
         b1.SetActive(flag);
         b2.SetActive(flag);

@@ -5,13 +5,14 @@ using UnityEngine;
 public class close : MonoBehaviour
 {
     // Start is called before the first frame update
-    private bool flag;
+    //private bool flag;
     public GameObject image;
+    private buttonclick menu;
     public GameObject b1;
     public GameObject b2;
     void Start()
     {
-        
+        menu =GameObject.Find("menu").GetComponent<buttonclick>();
     }
 
     // Update is called once per frame
@@ -22,11 +23,9 @@ public class close : MonoBehaviour
 
     public void OnClick()
     {
-        print("click");
-        flag = false;
-        image.SetActive(flag);
-        b1.SetActive(flag);
-        b2.SetActive(flag);
-        flag = !flag;
+        menu.flag = false;
+        image.SetActive(menu.flag);
+        b1.SetActive(menu.flag);
+        b2.SetActive(menu.flag);
     }
 }
