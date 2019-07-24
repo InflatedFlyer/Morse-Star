@@ -234,7 +234,8 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\u6492\u5730\u65B9\u6492\u65E6\u98DE\u6D12"
+        value: "\u4E3A\u4E86\u4F7F\u4E0D\u540C\u8BA1\u7B97\u673A\u5382\u5BB6\u751F\u4EA7\u7684\u8BA1\u7B97\u673A\u80FD\u591F\u76F8\u4E92\u901A\u4FE1\uFF0C\n\u4EE5\u4FBF\u5728\u66F4\u5927\u7684\u8303\u56F4\u5185\u5EFA\u7ACB\u8BA1\u7B97\u673A\u7F51\u7EDC\uFF0C\n\u56FD\u9645\u6807\u51C6\u5316\u7EC4\u7EC7\uFF08ISO\uFF09\u57281978\u5E74\u63D0\u51FA\u4E86\u201C\u5F00\u653E\u7CFB\u7EDF\u4E92\u8054\u53C2\u8003\u6A21\u578B\u201D\uFF0C\n\u5373\u8457\u540D\u7684OSI/RM\u6A21\u578B\n\uFF08Open
+          System Interconnection/Reference Model\uFF09\u3002"
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -532,7 +533,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\u81EA\u884C\u8F66v\u73B0\u5728\u624Dv "
+        value: "\u73B0\u5728\u624D"
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
