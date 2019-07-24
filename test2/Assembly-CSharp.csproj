@@ -60,15 +60,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\backorigin.cs" />
-    <Compile Include="Assets\Block.cs" />
-    <Compile Include="Assets\BlockDrag.cs" />
-    <Compile Include="Assets\BlocksUpdate.cs" />
-    <Compile Include="Assets\buttonclick.cs" />
-    <Compile Include="Assets\close.cs" />
     <Compile Include="Assets\gamemanager.cs" />
-    <Compile Include="Assets\Lattice.cs" />
-    <Compile Include="Assets\quit.cs" />
+    <Compile Include="Assets\Script\backorigin.cs" />
+    <Compile Include="Assets\Script\Block.cs" />
+    <Compile Include="Assets\Script\BlockDrag.cs" />
+    <Compile Include="Assets\Script\BlocksUpdate.cs" />
+    <Compile Include="Assets\Script\buttonclick.cs" />
+    <Compile Include="Assets\Script\close.cs" />
+    <Compile Include="Assets\Script\Lattice.cs" />
+    <Compile Include="Assets\Script\NewBehaviourScript.cs" />
+    <Compile Include="Assets\Script\quit.cs" />
+    <Compile Include="Assets\Script\TestCustomLua.cs" />
     <Compile Include="Assets\UItools\Examples\FPSDisplay.cs" />
     <Compile Include="Assets\UItools\Scripts\CJFinc\Base\RichMonoBehaviour.cs" />
     <Compile Include="Assets\UItools\Scripts\CJFinc\UItools\AnimationFields.cs" />
