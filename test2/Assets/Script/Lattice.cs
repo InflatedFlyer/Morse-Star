@@ -18,7 +18,7 @@ public class Lattice : MonoBehaviour
     public static Lattice instance;
     public static float[] positionX;
     public static float[] positionY;
-
+    public int scenes;
     
    // public Vector2Int[] blockPositions;
        
@@ -79,7 +79,7 @@ public class Lattice : MonoBehaviour
         }
         if (isSuccess)
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(scenes);
         }
     }
 }
