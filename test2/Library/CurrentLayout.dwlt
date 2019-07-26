@@ -44,10 +44,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 957
-  m_MinSize: {x: 683, y: 498}
+  m_MinSize: {x: 681, y: 498}
   m_MaxSize: {x: 14004, y: 14048}
   vertical: 0
-  controlID: 119
+  controlID: 116
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -93,8 +93,8 @@ MonoBehaviour:
     y: 0
     width: 408
     height: 598
-  m_MinSize: {x: 202, y: 224}
-  m_MaxSize: {x: 4002, y: 4024}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -215,7 +215,7 @@ MonoBehaviour:
     y: 0
     width: 1283
     height: 957
-  m_MinSize: {x: 406, y: 498}
+  m_MinSize: {x: 404, y: 498}
   m_MaxSize: {x: 10002, y: 14048}
   vertical: 1
   controlID: 54
@@ -240,8 +240,8 @@ MonoBehaviour:
     y: 0
     width: 1283
     height: 598
-  m_MinSize: {x: 406, y: 224}
-  m_MaxSize: {x: 8006, y: 4024}
+  m_MinSize: {x: 404, y: 224}
+  m_MaxSize: {x: 8004, y: 4024}
   vertical: 0
   controlID: 55
 --- !u!114 &11
@@ -300,12 +300,12 @@ MonoBehaviour:
   actorFoldouts:
     propertiesKeys: 
     propertiesValues: 
-    fieldsKeys: 
-    fieldsValues: 
+    fieldsKeys: ffffffff02000000
+    fieldsValues: 0000
   actorFilter: 
-  actorListSelectedIndex: -1
+  actorListSelectedIndex: 2
   showNodeEditor: 1
-  currentConversationID: 2
+  currentConversationID: 3
   globalSearchText: 
   globalReplaceText: 
   globalSearchSpecificConversation: 0
@@ -337,7 +337,7 @@ MonoBehaviour:
   isSearchBarOpen: 0
   searchString: 
   searchCaseSensitive: 0
-  currentEntryID: 3
+  currentEntryID: 4
   itemFoldouts:
     propertiesKeys: 
     propertiesValues: 
@@ -380,7 +380,7 @@ MonoBehaviour:
   watches: []
   autoUpdateWatches: 0
   watchUpdateFrequency: 1
-  nextWatchUpdateTime: 954.4193990680021
+  nextWatchUpdateTime: 174.39898000226665
   watchableVariableNames:
   - Actor
   - ActorIndex
@@ -405,6 +405,8 @@ MonoBehaviour:
   conversationTitles:
   - New Conversation 1
   - New Conversation 2
+  - fen1
+  - fen2
   conversationIndex: -1
   snapToGridAmount: 0
   confirmDelete: 1
@@ -447,20 +449,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Script
+    - Assets/Scenes
   m_ViewMode: 1
   m_StartGridSize: 55
   m_LastFolders:
-  - Assets/Script
+  - Assets/Scenes
   m_LastFoldersGridSize: 55
   m_LastProjectPath: D:\GitHub\Morse-Star\test2
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 318}
-    m_SelectedIDs: c2300000
-    m_LastClickedID: 12482
-    m_ExpandedIDs: 00000000402e00008a2e000006300000e03100000a3200004c340000be3400008437000000ca9a3b
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: aa370000
+    m_LastClickedID: 14250
+    m_ExpandedIDs: 00000000442e00008e2e00000c3000001032000054340000c63400008e37000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -488,7 +490,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000402e00008a2e000006300000e03100000a3200004c340000be34000084370000
+    m_ExpandedIDs: 00000000442e00008e2e00000c3000001032000054340000c63400008e370000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -515,7 +517,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -607,9 +609,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: f4ffffff
-      m_LastClickedID: -12
-      m_ExpandedIDs: 9cfbffffc0fbfffff4ffffff
+      m_SelectedIDs: b23c0000
+      m_LastClickedID: 15538
+      m_ExpandedIDs: c0fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -665,9 +667,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 17.33048, y: 24.752111, z: -2.8205032}
+    m_Target: {x: 427.07016, y: 258.36844, z: 3.1206055}
     speed: 2
-    m_Value: {x: 17.33048, y: 24.752111, z: -2.8205032}
+    m_Value: {x: 427.07016, y: 258.36844, z: 3.1206055}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -699,9 +701,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0.016809292, y: 0.00690207, z: -0.00011571413, w: 0.9998349}
   m_Size:
-    m_Target: 967.9664
+    m_Target: 728.3993
     speed: 2
-    m_Value: 967.9664
+    m_Value: 728.3993
   m_Ortho:
     m_Target: 0
     speed: 2

@@ -70,10 +70,11 @@
     <Compile Include="Assets\Script\Lattice.cs" />
     <Compile Include="Assets\Script\NewBehaviourScript.cs" />
     <Compile Include="Assets\Script\quit.cs" />
+    <Compile Include="Assets\Script\SceneFadeInOut.cs" />
     <Compile Include="Assets\Script\TestCustomLua.cs" />
-    <Compile Include="Assets\Script\to0.cs" />
     <Compile Include="Assets\Script\to1.cs" />
     <Compile Include="Assets\Script\to2.cs" />
+    <Compile Include="Assets\Script\toscenes.cs" />
     <Compile Include="Assets\UItools\Examples\FPSDisplay.cs" />
     <Compile Include="Assets\UItools\Scripts\CJFinc\Base\RichMonoBehaviour.cs" />
     <Compile Include="Assets\UItools\Scripts\CJFinc\UItools\AnimationFields.cs" />

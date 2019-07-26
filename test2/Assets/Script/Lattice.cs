@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
-
+using PixelCrushers.DialogueSystem;
 [System.Serializable]
 public class blockgroup
 {
@@ -19,9 +19,9 @@ public class Lattice : MonoBehaviour
     public static float[] positionX;
     public static float[] positionY;
     public int scenes;
-    
-   // public Vector2Int[] blockPositions;
-       
+    private SceneFadeInOut fadescene;
+    // public Vector2Int[] blockPositions;
+
     //public Vector2Int[] successOffsets;
 
     public blockgroup bg;
@@ -79,7 +79,10 @@ public class Lattice : MonoBehaviour
         }
         if (isSuccess)
         {
-            SceneManager.LoadScene(scenes);
+            //SceneManager.LoadScene(scenes);
+            fadescene = GameObject.Find("RawImage").GetComponent<SceneFadeInOut>();
+            fadescene.scenenum = scenes;
+            fadescene.sceneEnding = true;
         }
     }
 }
