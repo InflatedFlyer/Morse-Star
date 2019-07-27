@@ -124,7 +124,7 @@ MonoBehaviour:
   scrollbarEnabler: {fileID: 0}
   buttonTemplateScrollbarResetValue: 1
   explicitNavigationForTemplateButtons: 1
-  loopExplicitNavigation: 0
+  loopExplicitNavigation: 1
   autonumber:
     enabled: 0
     regularNumberHotkeys: 1
@@ -256,7 +256,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -60, y: -60}
+  m_SizeDelta: {x: -100, y: -100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4881295929683418016
 CanvasRenderer:
@@ -332,8 +332,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 304.76, y: 0}
-  m_SizeDelta: {x: -609.52, y: 0}
+  m_AnchoredPosition: {x: 281.3, y: 0}
+  m_SizeDelta: {x: -562.6, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4881295929878834075
 CanvasRenderer:
@@ -783,7 +783,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2738031108281943269
 CanvasRenderer:
@@ -973,8 +973,9 @@ GameObject:
   - component: {fileID: 853452357421844447}
   - component: {fileID: 2433013950049908509}
   - component: {fileID: 7456015034503220841}
-  - component: {fileID: 192890459405560003}
   - component: {fileID: 5817424400239119902}
+  - component: {fileID: 8190764390914740747}
+  - component: {fileID: 4459577597053282987}
   m_Layer: 5
   m_Name: Response Button T
   m_TagString: Untagged
@@ -999,8 +1000,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 80}
+  m_AnchoredPosition: {x: 258, y: 0}
+  m_SizeDelta: {x: 516, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &853452357421844447
 CanvasRenderer:
@@ -1081,29 +1082,6 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!114 &192890459405560003
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6714923753533689097}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -405508275, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Padding:
-    m_Left: 0
-    m_Right: 0
-    m_Top: 0
-    m_Bottom: 0
-  m_ChildAlignment: 4
-  m_Spacing: 0
-  m_ChildForceExpandWidth: 1
-  m_ChildForceExpandHeight: 1
-  m_ChildControlWidth: 1
-  m_ChildControlHeight: 1
 --- !u!114 &5817424400239119902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1121,6 +1099,43 @@ MonoBehaviour:
     m_uiText: {fileID: 2977244172105982126}
   setLabelColor: 1
   defaultColor: {r: 1, g: 0.5738902, b: 0.11792451, a: 1}
+--- !u!114 &8190764390914740747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6714923753533689097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1297475563, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 7
+  m_Spacing: 0
+  m_ChildForceExpandWidth: 0
+  m_ChildForceExpandHeight: 0
+  m_ChildControlWidth: 1
+  m_ChildControlHeight: 0
+--- !u!114 &4459577597053282987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6714923753533689097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1741964061, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalFit: 0
+  m_VerticalFit: 2
 --- !u!1 &7216600092714713078
 GameObject:
   m_ObjectHideFlags: 0
@@ -1267,7 +1282,7 @@ GameObject:
   - component: {fileID: 8386589993578094425}
   - component: {fileID: 1398793623121698969}
   - component: {fileID: 5009486159995813292}
-  - component: {fileID: 2698625446700464871}
+  - component: {fileID: 489747195598737145}
   m_Layer: 5
   m_Name: Conten
   m_TagString: Untagged
@@ -1292,9 +1307,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -120}
-  m_SizeDelta: {x: -40, y: -240}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -40, y: 0}
+  m_Pivot: {x: 0.5, y: 0}
 --- !u!222 &8386589993578094425
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1339,14 +1354,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8300402136084808569}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1741964061, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_HorizontalFit: 0
   m_VerticalFit: 2
---- !u!114 &2698625446700464871
+--- !u!114 &489747195598737145
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1355,7 +1370,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8300402136084808569}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -405508275, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 1297475563, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
@@ -1363,9 +1378,9 @@ MonoBehaviour:
     m_Right: 0
     m_Top: 0
     m_Bottom: 0
-  m_ChildAlignment: 4
-  m_Spacing: 0
-  m_ChildForceExpandWidth: 0
-  m_ChildForceExpandHeight: 1
-  m_ChildControlWidth: 0
-  m_ChildControlHeight: 0
+  m_ChildAlignment: 7
+  m_Spacing: 5
+  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandHeight: 0
+  m_ChildControlWidth: 1
+  m_ChildControlHeight: 1
