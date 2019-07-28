@@ -22,7 +22,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_3_14;UNITY_2018_3;UNITY_2018;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_TEXTURE_STREAMING;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_VIDEO;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_LOCALIZATION;PLATFORM_STANDALONE_WIN;PLATFORM_STANDALONE;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_EVENT_QUEUE;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_AR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_4_6;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_VSTU;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_3_14;UNITY_2018_3;UNITY_2018;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_TEXTURE_STREAMING;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_VIDEO;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_LOCALIZATION;PLATFORM_STANDALONE_WIN;PLATFORM_STANDALONE;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_EVENT_QUEUE;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_AR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_4_6;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_VSTU;CROSS_PLATFORM_INPUT;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
@@ -60,31 +60,160 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\UItools\Editor\CJFinc\Base\RichEditor.cs" />
-    <Compile Include="Assets\UItools\Editor\CJFinc\UItools\UIGroupEditor.cs" />
-    <Compile Include="Assets\UItools\Editor\CJFinc\UItools\UIItemEditor.cs" />
-    <Compile Include="Assets\UItools\Editor\CJFinc\UItools\UIRectTransformHelper.cs" />
-    <Compile Include="Assets\UItools\Editor\CJFinc\UItools\UIStateGroupControlEditor.cs" />
-    <Compile Include="Assets\UItools\Editor\CJFinc\UItools\UIStateGroupEditor.cs" />
-    <Compile Include="Assets\UItools\Editor\CJFinc\UItools\UIStateItemAnimationEditor.cs" />
-    <Compile Include="Assets\UItools\Editor\CJFinc\UItools\UIStateItemEditor.cs" />
-    <Compile Include="Assets\UItools\Editor\CJFinc\UItools\UIStateItemExtentionEditor.cs" />
-    <Compile Include="Assets\UItools\Editor\CJFinc\UItools\UIStateItemMirrorEditor.cs" />
-    <Compile Include="Assets\UItools\Editor\CJFinc\UItools\UItoolsEditor.cs" />
+    <Compile Include="Assets\10.Plugins\AmplifyColor\Plugins\Editor\About.cs" />
+    <Compile Include="Assets\10.Plugins\AmplifyColor\Plugins\Editor\AmplifyColorEffectEditor.cs" />
+    <Compile Include="Assets\10.Plugins\AmplifyColor\Plugins\Editor\AmplifyColorEffectEditorBase.cs" />
+    <Compile Include="Assets\10.Plugins\AmplifyColor\Plugins\Editor\AmplifyColorVolumeEditor.cs" />
+    <Compile Include="Assets\10.Plugins\AmplifyColor\Plugins\Editor\AmplifyColorVolumeEditorBase.cs" />
+    <Compile Include="Assets\10.Plugins\AmplifyColor\Plugins\Editor\BackBufferHandler.cs" />
+    <Compile Include="Assets\10.Plugins\AmplifyColor\Plugins\Editor\CameraCollection.cs" />
+    <Compile Include="Assets\10.Plugins\AmplifyColor\Plugins\Editor\EncryptDecrypt.cs" />
+    <Compile Include="Assets\10.Plugins\AmplifyColor\Plugins\Editor\FileHandler.cs" />
+    <Compile Include="Assets\10.Plugins\AmplifyColor\Plugins\Editor\ImageResult.cs" />
+    <Compile Include="Assets\10.Plugins\AmplifyColor\Plugins\Editor\LUTBrowser.cs" />
+    <Compile Include="Assets\10.Plugins\AmplifyColor\Plugins\Editor\LUTEditor.cs" />
+    <Compile Include="Assets\10.Plugins\AmplifyColor\Plugins\Editor\LUTResult.cs" />
+    <Compile Include="Assets\10.Plugins\AmplifyColor\Plugins\Editor\LUTSettings.cs" />
+    <Compile Include="Assets\10.Plugins\AmplifyColor\Plugins\Editor\LUTWriter.cs" />
+    <Compile Include="Assets\10.Plugins\AmplifyColor\Plugins\Editor\PhotoshopConnection.cs" />
+    <Compile Include="Assets\10.Plugins\AmplifyColor\Plugins\Editor\PhotoshopEncryptDecrypt.cs" />
+    <Compile Include="Assets\10.Plugins\AmplifyColor\Plugins\Editor\PhotoshopHandler.cs" />
+    <Compile Include="Assets\10.Plugins\AmplifyColor\Plugins\Editor\PhotoshopProtocol.cs" />
+    <Compile Include="Assets\10.Plugins\AmplifyColor\Plugins\Editor\PhotoshopTouchHelper.cs" />
+    <Compile Include="Assets\10.Plugins\AmplifyColor\Plugins\Editor\ResolutionSettings.cs" />
+    <Compile Include="Assets\10.Plugins\AmplifyColor\Plugins\Editor\ToolSettings.cs" />
+    <Compile Include="Assets\10.Plugins\DragonBones\Editor\AssetProcess.cs" />
+    <Compile Include="Assets\10.Plugins\DragonBones\Editor\DragonBonesIcons.cs" />
+    <Compile Include="Assets\10.Plugins\DragonBones\Editor\PickJsonDataWindow.cs" />
+    <Compile Include="Assets\10.Plugins\DragonBones\Editor\ShowSlotsWindow.cs" />
+    <Compile Include="Assets\10.Plugins\DragonBones\Editor\UnityArmatureEditor.cs" />
+    <Compile Include="Assets\10.Plugins\DragonBones\Editor\UnityEditor.cs" />
+    <Compile Include="Assets\10.Plugins\Example\Obi\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs" />
+    <Compile Include="Assets\10.Plugins\Example\Obi\Editor\ObiAboutWindow.cs" />
+    <Compile Include="Assets\10.Plugins\Example\Obi\Editor\ObiAerodynamicConstraintsEditor.cs" />
+    <Compile Include="Assets\10.Plugins\Example\Obi\Editor\ObiBendingConstraintsEditor.cs" />
+    <Compile Include="Assets\10.Plugins\Example\Obi\Editor\ObiBezierCurveEditor.cs" />
+    <Compile Include="Assets\10.Plugins\Example\Obi\Editor\ObiBoneEditor.cs" />
+    <Compile Include="Assets\10.Plugins\Example\Obi\Editor\ObiCatmullRomCurveEditor.cs" />
+    <Compile Include="Assets\10.Plugins\Example\Obi\Editor\ObiClothParticleHandles.cs" />
+    <Compile Include="Assets\10.Plugins\Example\Obi\Editor\ObiColliderEditor.cs" />
+    <Compile Include="Assets\10.Plugins\Example\Obi\Editor\ObiDistanceConstraintsEditor.cs" />
+    <Compile Include="Assets\10.Plugins\Example\Obi\Editor\ObiDraggableIcon.cs" />
+    <Compile Include="Assets\10.Plugins\Example\Obi\Editor\ObiEditorUtils.cs" />
+    <Compile Include="Assets\10.Plugins\Example\Obi\Editor\ObiEmitterEditor.cs" />
+    <Compile Include="Assets\10.Plugins\Example\Obi\Editor\ObiEmitterMaterialEditor.cs" />
+    <Compile Include="Assets\10.Plugins\Example\Obi\Editor\ObiParticleActorEditor.cs" />
+    <Compile Include="Assets\10.Plugins\Example\Obi\Editor\ObiParticleBakerEditor.cs" />
+    <Compile Include="Assets\10.Plugins\Example\Obi\Editor\ObiParticleCacheEditor.cs" />
+    <Compile Include="Assets\10.Plugins\Example\Obi\Editor\ObiParticleHandleEditor.cs" />
+    <Compile Include="Assets\10.Plugins\Example\Obi\Editor\ObiParticleRendererEditor.cs" />
+    <Compile Include="Assets\10.Plugins\Example\Obi\Editor\ObiPinConstraintsEditor.cs" />
+    <Compile Include="Assets\10.Plugins\Example\Obi\Editor\ObiRopeCursorEditor.cs" />
+    <Compile Include="Assets\10.Plugins\Example\Obi\Editor\ObiRopeEditor.cs" />
+    <Compile Include="Assets\10.Plugins\Example\Obi\Editor\ObiRopeSectionEditor.cs" />
+    <Compile Include="Assets\10.Plugins\Example\Obi\Editor\ObiSolverEditor.cs" />
+    <Compile Include="Assets\10.Plugins\Example\Obi\Editor\ObiSplineHandles.cs" />
+    <Compile Include="Assets\10.Plugins\Example\Obi\Editor\ObiStitcherEditor.cs" />
+    <Compile Include="Assets\10.Plugins\Example\Obi\Editor\ObiTetherConstraintsEditor.cs" />
+    <Compile Include="Assets\10.Plugins\Example\Obi\Editor\ObiVolumeConstraintsEditor.cs" />
+    <Compile Include="Assets\10.Plugins\Example\Obi\Editor\PreviewHelpers.cs" />
+    <Compile Include="Assets\10.Plugins\Example\ProCamera2D\Code\Core\Editor\CleanupMissingScripts.cs" />
+    <Compile Include="Assets\10.Plugins\Example\ProCamera2D\Code\Core\Editor\ConstantShakePresetEditor.cs" />
+    <Compile Include="Assets\10.Plugins\Example\ProCamera2D\Code\Core\Editor\MinMaxSliderDrawer.cs" />
+    <Compile Include="Assets\10.Plugins\Example\ProCamera2D\Code\Core\Editor\ProCamera2DEditor.cs" />
+    <Compile Include="Assets\10.Plugins\Example\ProCamera2D\Code\Core\Editor\ProCamera2DEditorHelper.cs" />
+    <Compile Include="Assets\10.Plugins\Example\ProCamera2D\Code\Core\Editor\ProCamera2DEditorResources.cs" />
+    <Compile Include="Assets\10.Plugins\Example\ProCamera2D\Code\Core\Editor\ProCamera2DHierarchyIcon.cs" />
+    <Compile Include="Assets\10.Plugins\Example\ProCamera2D\Code\Core\Editor\ProCamera2DPrefs.cs" />
+    <Compile Include="Assets\10.Plugins\Example\ProCamera2D\Code\Core\Editor\ScriptableObjectUtility.cs" />
+    <Compile Include="Assets\10.Plugins\Example\ProCamera2D\Code\Core\Editor\ShakePresetEditor.cs" />
+    <Compile Include="Assets\10.Plugins\Example\ProCamera2D\Code\Extensions\Editor\ProCamera2DCameraWindowEditor.cs" />
+    <Compile Include="Assets\10.Plugins\Example\ProCamera2D\Code\Extensions\Editor\ProCamera2DCinematicsEditor.cs" />
+    <Compile Include="Assets\10.Plugins\Example\ProCamera2D\Code\Extensions\Editor\ProCamera2DContentFitterEditor.cs" />
+    <Compile Include="Assets\10.Plugins\Example\ProCamera2D\Code\Extensions\Editor\ProCamera2DForwardFocusEditor.cs" />
+    <Compile Include="Assets\10.Plugins\Example\ProCamera2D\Code\Extensions\Editor\ProCamera2DGeometryBoundariesEditor.cs" />
+    <Compile Include="Assets\10.Plugins\Example\ProCamera2D\Code\Extensions\Editor\ProCamera2DLimitDistanceEditor.cs" />
+    <Compile Include="Assets\10.Plugins\Example\ProCamera2D\Code\Extensions\Editor\ProCamera2DLimitSpeedEditor.cs" />
+    <Compile Include="Assets\10.Plugins\Example\ProCamera2D\Code\Extensions\Editor\ProCamera2DNumericBoundariesEditor.cs" />
+    <Compile Include="Assets\10.Plugins\Example\ProCamera2D\Code\Extensions\Editor\ProCamera2DPanAndZoomEditor.cs" />
+    <Compile Include="Assets\10.Plugins\Example\ProCamera2D\Code\Extensions\Editor\ProCamera2DParallaxEditor.cs" />
+    <Compile Include="Assets\10.Plugins\Example\ProCamera2D\Code\Extensions\Editor\ProCamera2DPixelPerfectEditor.cs" />
+    <Compile Include="Assets\10.Plugins\Example\ProCamera2D\Code\Extensions\Editor\ProCamera2DPointerInfluenceEditor.cs" />
+    <Compile Include="Assets\10.Plugins\Example\ProCamera2D\Code\Extensions\Editor\ProCamera2DRailsEditor.cs" />
+    <Compile Include="Assets\10.Plugins\Example\ProCamera2D\Code\Extensions\Editor\ProCamera2DRepeaterEditor.cs" />
+    <Compile Include="Assets\10.Plugins\Example\ProCamera2D\Code\Extensions\Editor\ProCamera2DRoomsEditor.cs" />
+    <Compile Include="Assets\10.Plugins\Example\ProCamera2D\Code\Extensions\Editor\ProCamera2DShakeEditor.cs" />
+    <Compile Include="Assets\10.Plugins\Example\ProCamera2D\Code\Extensions\Editor\ProCamera2DSpeedBasedZoomEditor.cs" />
+    <Compile Include="Assets\10.Plugins\Example\ProCamera2D\Code\Extensions\Editor\ProCamera2DTransitionsFXEditor.cs" />
+    <Compile Include="Assets\10.Plugins\Example\ProCamera2D\Code\Extensions\Editor\ProCamera2DZoomToFitTargetsEditor.cs" />
+    <Compile Include="Assets\10.Plugins\Example\ProCamera2D\Code\Helpers\Pixel Perfect\Editor\ProCamera2DPixelPerfectSpriteEditor.cs" />
+    <Compile Include="Assets\10.Plugins\Example\ProCamera2D\Code\Triggers\Editor\ProCamera2DTriggerBoundariesEditor.cs" />
+    <Compile Include="Assets\10.Plugins\Example\ProCamera2D\Code\Triggers\Editor\ProCamera2DTriggerInfluenceEditor.cs" />
+    <Compile Include="Assets\10.Plugins\Example\ProCamera2D\Code\Triggers\Editor\ProCamera2DTriggerRailsEditor.cs" />
+    <Compile Include="Assets\10.Plugins\Example\ProCamera2D\Code\Triggers\Editor\ProCamera2DTriggerZoomEditor.cs" />
+    <Compile Include="Assets\10.Plugins\Pixelplacement\iTweenPath\Editor\iTweenPathEditor.cs" />
+    <Compile Include="Assets\Example\_JigsawPuzzle_Kit\_SystemScripts\Editor\GameController_Inspector.cs" />
+    <Compile Include="Assets\Example\_JigsawPuzzle_Kit\_SystemScripts\Editor\PuzzleController_Inspector.cs" />
+    <Compile Include="Assets\Example\_JigsawPuzzle_Kit\_SystemScripts\Editor\PuzzleGenerator_Window.cs" />
+    <Compile Include="Assets\Example\_JigsawPuzzle_Kit\_SystemScripts\Editor\PuzzleImporter_Window.cs" />
+    <Compile Include="Assets\Example\Living Environment Effects - VFX Pack [Wand And Circles]\PostProcessing\Editor\Attributes\PostProcessingModelEditorAttribute.cs" />
+    <Compile Include="Assets\Example\Living Environment Effects - VFX Pack [Wand And Circles]\PostProcessing\Editor\Models\AmbientOcclusionModelEditor.cs" />
+    <Compile Include="Assets\Example\Living Environment Effects - VFX Pack [Wand And Circles]\PostProcessing\Editor\Models\AntialiasingModelEditor.cs" />
+    <Compile Include="Assets\Example\Living Environment Effects - VFX Pack [Wand And Circles]\PostProcessing\Editor\Models\BloomModelEditor.cs" />
+    <Compile Include="Assets\Example\Living Environment Effects - VFX Pack [Wand And Circles]\PostProcessing\Editor\Models\BuiltinDebugViewsEditor.cs" />
+    <Compile Include="Assets\Example\Living Environment Effects - VFX Pack [Wand And Circles]\PostProcessing\Editor\Models\ChromaticAberrationEditor.cs" />
+    <Compile Include="Assets\Example\Living Environment Effects - VFX Pack [Wand And Circles]\PostProcessing\Editor\Models\ColorGradingModelEditor.cs" />
+    <Compile Include="Assets\Example\Living Environment Effects - VFX Pack [Wand And Circles]\PostProcessing\Editor\Models\DefaultPostFxModelEditor.cs" />
+    <Compile Include="Assets\Example\Living Environment Effects - VFX Pack [Wand And Circles]\PostProcessing\Editor\Models\DepthOfFieldModelEditor.cs" />
+    <Compile Include="Assets\Example\Living Environment Effects - VFX Pack [Wand And Circles]\PostProcessing\Editor\Models\DitheringModelEditor.cs" />
+    <Compile Include="Assets\Example\Living Environment Effects - VFX Pack [Wand And Circles]\PostProcessing\Editor\Models\EyeAdaptationModelEditor.cs" />
+    <Compile Include="Assets\Example\Living Environment Effects - VFX Pack [Wand And Circles]\PostProcessing\Editor\Models\FogModelEditor.cs" />
+    <Compile Include="Assets\Example\Living Environment Effects - VFX Pack [Wand And Circles]\PostProcessing\Editor\Models\GrainModelEditor.cs" />
+    <Compile Include="Assets\Example\Living Environment Effects - VFX Pack [Wand And Circles]\PostProcessing\Editor\Models\MotionBlurModelEditor.cs" />
+    <Compile Include="Assets\Example\Living Environment Effects - VFX Pack [Wand And Circles]\PostProcessing\Editor\Models\ScreenSpaceReflectionModelEditor.cs" />
+    <Compile Include="Assets\Example\Living Environment Effects - VFX Pack [Wand And Circles]\PostProcessing\Editor\Models\UserLutModelEditor.cs" />
+    <Compile Include="Assets\Example\Living Environment Effects - VFX Pack [Wand And Circles]\PostProcessing\Editor\Models\VignetteModelEditor.cs" />
+    <Compile Include="Assets\Example\Living Environment Effects - VFX Pack [Wand And Circles]\PostProcessing\Editor\Monitors\HistogramMonitor.cs" />
+    <Compile Include="Assets\Example\Living Environment Effects - VFX Pack [Wand And Circles]\PostProcessing\Editor\Monitors\ParadeMonitor.cs" />
+    <Compile Include="Assets\Example\Living Environment Effects - VFX Pack [Wand And Circles]\PostProcessing\Editor\Monitors\VectorscopeMonitor.cs" />
+    <Compile Include="Assets\Example\Living Environment Effects - VFX Pack [Wand And Circles]\PostProcessing\Editor\Monitors\WaveformMonitor.cs" />
+    <Compile Include="Assets\Example\Living Environment Effects - VFX Pack [Wand And Circles]\PostProcessing\Editor\PostProcessingBehaviourEditor.cs" />
+    <Compile Include="Assets\Example\Living Environment Effects - VFX Pack [Wand And Circles]\PostProcessing\Editor\PostProcessingFactory.cs" />
+    <Compile Include="Assets\Example\Living Environment Effects - VFX Pack [Wand And Circles]\PostProcessing\Editor\PostProcessingInspector.cs" />
+    <Compile Include="Assets\Example\Living Environment Effects - VFX Pack [Wand And Circles]\PostProcessing\Editor\PostProcessingModelEditor.cs" />
+    <Compile Include="Assets\Example\Living Environment Effects - VFX Pack [Wand And Circles]\PostProcessing\Editor\PostProcessingMonitor.cs" />
+    <Compile Include="Assets\Example\Living Environment Effects - VFX Pack [Wand And Circles]\PostProcessing\Editor\PropertyDrawers\GetSetDrawer.cs" />
+    <Compile Include="Assets\Example\Living Environment Effects - VFX Pack [Wand And Circles]\PostProcessing\Editor\PropertyDrawers\TrackballGroupDrawer.cs" />
+    <Compile Include="Assets\Example\Living Environment Effects - VFX Pack [Wand And Circles]\PostProcessing\Editor\Utils\CurveEditor.cs" />
+    <Compile Include="Assets\Example\Living Environment Effects - VFX Pack [Wand And Circles]\PostProcessing\Editor\Utils\EditorGUIHelper.cs" />
+    <Compile Include="Assets\Example\Living Environment Effects - VFX Pack [Wand And Circles]\PostProcessing\Editor\Utils\EditorResources.cs" />
+    <Compile Include="Assets\Example\Living Environment Effects - VFX Pack [Wand And Circles]\PostProcessing\Editor\Utils\FxStyles.cs" />
+    <Compile Include="Assets\Example\Living Environment Effects - VFX Pack [Wand And Circles]\PostProcessing\Editor\Utils\ReflectionUtils.cs" />
+    <Compile Include="Assets\Example\UItools\Editor\CJFinc\Base\RichEditor.cs" />
+    <Compile Include="Assets\Example\UItools\Editor\CJFinc\UItools\UIGroupEditor.cs" />
+    <Compile Include="Assets\Example\UItools\Editor\CJFinc\UItools\UIItemEditor.cs" />
+    <Compile Include="Assets\Example\UItools\Editor\CJFinc\UItools\UIRectTransformHelper.cs" />
+    <Compile Include="Assets\Example\UItools\Editor\CJFinc\UItools\UIStateGroupControlEditor.cs" />
+    <Compile Include="Assets\Example\UItools\Editor\CJFinc\UItools\UIStateGroupEditor.cs" />
+    <Compile Include="Assets\Example\UItools\Editor\CJFinc\UItools\UIStateItemAnimationEditor.cs" />
+    <Compile Include="Assets\Example\UItools\Editor\CJFinc\UItools\UIStateItemEditor.cs" />
+    <Compile Include="Assets\Example\UItools\Editor\CJFinc\UItools\UIStateItemExtentionEditor.cs" />
+    <Compile Include="Assets\Example\UItools\Editor\CJFinc\UItools\UIStateItemMirrorEditor.cs" />
+    <Compile Include="Assets\Example\UItools\Editor\CJFinc\UItools\UItoolsEditor.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/Mgully/Documents/GitHub/Morse-Star/test2/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>D:/GitHub/Morse-Star/test2/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/Mgully/Documents/GitHub/Morse-Star/test2/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>D:/GitHub/Morse-Star/test2/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/Mgully/Documents/GitHub/Morse-Star/test2/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>D:/GitHub/Morse-Star/test2/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/Mgully/Documents/GitHub/Morse-Star/test2/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>D:/GitHub/Morse-Star/test2/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>C:/Users/Mgully/Documents/GitHub/Morse-Star/test2/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>D:/GitHub/Morse-Star/test2/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.14f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -314,6 +443,12 @@
     <Reference Include="UnityEditor.Graphs">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.14f1/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.Android.Extensions">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.14f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.14f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.14f1/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
@@ -321,19 +456,34 @@
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Advertisements">
-      <HintPath>C:/Users/Mgully/Documents/GitHub/Morse-Star/test2/Library/PackageCache/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
+      <HintPath>D:/GitHub/Morse-Star/test2/Library/PackageCache/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>C:/Users/Mgully/Documents/GitHub/Morse-Star/test2/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>D:/GitHub/Morse-Star/test2/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>C:/Users/Mgully/Documents/GitHub/Morse-Star/test2/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>D:/GitHub/Morse-Star/test2/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>C:/Users/Mgully/Documents/GitHub/Morse-Star/test2/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>D:/GitHub/Morse-Star/test2/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Purchasing">
-      <HintPath>C:/Users/Mgully/Documents/GitHub/Morse-Star/test2/Library/PackageCache/com.unity.purchasing@2.0.3/Editor/UnityEditor.Purchasing.dll</HintPath>
+      <HintPath>D:/GitHub/Morse-Star/test2/Library/PackageCache/com.unity.purchasing@2.0.3/Editor/UnityEditor.Purchasing.dll</HintPath>
+    </Reference>
+    <Reference Include="AmplifyColorEditor">
+      <HintPath>D:/GitHub/Morse-Star/test2/Assets/10.Plugins/AmplifyColor/Plugins/Editor/AmplifyColorEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="AmplifyColor">
+      <HintPath>D:/GitHub/Morse-Star/test2/Assets/10.Plugins/AmplifyColor/Plugins/AmplifyColor.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>D:/GitHub/Morse-Star/test2/Assets/10.Plugins/UnityPackages/JsonNet/Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.14f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Common">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.14f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.14f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
