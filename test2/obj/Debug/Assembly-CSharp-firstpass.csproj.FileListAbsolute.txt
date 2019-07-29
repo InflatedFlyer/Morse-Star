@@ -562,3 +562,5 @@ C:\Users\Mgully\Documents\GitHub\Morse-Star\test2\obj\Debug\Assembly-CSharp-firs
 C:\Users\Mgully\Documents\GitHub\Morse-Star\test2\obj\Debug\Assembly-CSharp-firstpass.csproj.CopyComplete
 C:\Users\Mgully\Documents\GitHub\Morse-Star\test2\obj\Debug\Assembly-CSharp-firstpass.dll
 C:\Users\Mgully\Documents\GitHub\Morse-Star\test2\obj\Debug\Assembly-CSharp-firstpass.pdb
+D:\GitHub\Morse-Star\test2\Temp\bin\Debug\AmplifyColor.dll
+D:\GitHub\Morse-Star\test2\Temp\bin\Debug\Newtonsoft.Json.dll

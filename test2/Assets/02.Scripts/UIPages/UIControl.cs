@@ -5,7 +5,7 @@ using UnityEngine;
 public class UIControl : MonoBehaviour
 {
     public GameObject mainMenu;
-
+    public GameObject b;
     public static UIControl instance;
     private void Awake()
     {
@@ -41,6 +41,7 @@ public class UIControl : MonoBehaviour
         //    GameObject.FindWithTag("Character").GetComponent<WalkCharacter>().LoseControl();
         //}
         mainMenu.SetActive(!mainMenu.activeSelf);
+        b.SetActive(!b.activeSelf);
     }
 
     public void LinkToMainCamera()

@@ -1128,3 +1128,5 @@ C:\Users\Mgully\Documents\GitHub\Morse-Star\test2\obj\Debug\Assembly-CSharp.cspr
 C:\Users\Mgully\Documents\GitHub\Morse-Star\test2\obj\Debug\Assembly-CSharp.csproj.CopyComplete
 C:\Users\Mgully\Documents\GitHub\Morse-Star\test2\obj\Debug\Assembly-CSharp.dll
 C:\Users\Mgully\Documents\GitHub\Morse-Star\test2\obj\Debug\Assembly-CSharp.pdb
+D:\GitHub\Morse-Star\test2\Temp\bin\Debug\AmplifyColor.dll
+D:\GitHub\Morse-Star\test2\Temp\bin\Debug\Newtonsoft.Json.dll
