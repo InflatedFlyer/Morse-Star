@@ -612,12 +612,11 @@
     <Compile Include="Assets\Script\buttonclick.cs" />
     <Compile Include="Assets\Script\close.cs" />
     <Compile Include="Assets\Script\Lattice.cs" />
-    <Compile Include="Assets\Script\NewBehaviourScript.cs" />
+    <Compile Include="Assets\Script\MCH.cs" />
     <Compile Include="Assets\Script\quit.cs" />
     <Compile Include="Assets\Script\ScaleBarAnima.cs" />
     <Compile Include="Assets\Script\SceneFadeInOut.cs" />
     <Compile Include="Assets\Script\TestCustomLua.cs" />
-    <Compile Include="Assets\Script\to1.cs" />
     <Compile Include="Assets\Script\to2.cs" />
     <Compile Include="Assets\Script\toscenes.cs" />
     <Compile Include="Assets\Xunishijiexuanzhuankaiguan.cs" />

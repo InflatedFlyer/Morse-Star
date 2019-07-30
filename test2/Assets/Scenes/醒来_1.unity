@@ -182,7 +182,7 @@ PrefabInstance:
     - target: {fileID: 9015523603138979384, guid: 1e466b0c08072e84b9e975af3e9f6f8a,
         type: 3}
       propertyPath: conversation
-      value: fen1
+      value: "\u9192\u67653"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e466b0c08072e84b9e975af3e9f6f8a, type: 3}
@@ -343,7 +343,7 @@ PrefabInstance:
     - target: {fileID: 3953939333126568851, guid: bbaf533e68b85bc4a943781a1060dd90,
         type: 3}
       propertyPath: displaySettings.subtitleSettings.continueButton
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bbaf533e68b85bc4a943781a1060dd90, type: 3}
