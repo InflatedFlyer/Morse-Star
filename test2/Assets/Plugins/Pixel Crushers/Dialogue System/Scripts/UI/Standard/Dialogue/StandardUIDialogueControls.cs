@@ -58,6 +58,14 @@ namespace PixelCrushers.DialogueSystem
             m_standardMenuControls.Initialize(menuPanels, defaultMenuPanel);
         }
 
+        //插入的自定义更改
+        public void InitializeMenu()
+        {
+            //m_standardSubtitleControls.Initialize(subtitlePanels, defaultNPCSubtitlePanel, defaultPCSubtitlePanel);
+            m_standardMenuControls.Initialize(menuPanels, defaultMenuPanel);
+        }
+        //
+
         #endregion
 
         #region Show & Hide Main Panel

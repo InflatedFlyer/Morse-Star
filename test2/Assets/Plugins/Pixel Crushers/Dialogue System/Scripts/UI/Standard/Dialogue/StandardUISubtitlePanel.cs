@@ -317,6 +317,20 @@ namespace PixelCrushers.DialogueSystem
                 portraitName.text = subtitle.speakerInfo.Name;
                 UITools.SendTextChangeMessage(portraitName);
             }
+
+
+            //插入的自定义更改
+            //
+            string s1 = subtitle.formattedText.text;
+            if (s1.StartsWith("???"))
+            {
+                m_accumulatedText = string.Empty;
+                subtitle.formattedText.text = subtitle.formattedText.text.Remove(0, 3);
+            }
+            //
+
+
+
             TypewriterUtility.StopTyping(subtitleText);
             var previousText = accumulateText ? m_accumulatedText : string.Empty;
             SetFormattedText(subtitleText, previousText, subtitle.formattedText);

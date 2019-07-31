@@ -7,9 +7,7 @@ public class to2 : ScriptableObject
 {
     // Start is called before the first frame update
     private gamemanager gamemanager;
-    private int charm;
-    private int money;
-    private int hungar;
+
     void Start()
     {
         gamemanager = GameObject.Find("GameManager").GetComponent<gamemanager>();
@@ -22,26 +20,34 @@ public class to2 : ScriptableObject
     }
     public void seth(int x)
     {
-        gamemanager.hungar = x;
+        gamemanager.Hungar = x;
     }
     public void addh(int x)
     {
-        gamemanager.hungar += x;
+        gamemanager.Hungar += x;
     }
     public void setm(int x)
     {
-        gamemanager.money = x;
+        gamemanager.Money = x;
     }
     public void addm(int x)
     {
-        gamemanager.money += x;
+        gamemanager.Money += x;
     }
     public void setc(int x)
     {
-        gamemanager.charm = x;
+        gamemanager.Charm = x;
     }
     public void addc(int x)
     {
-        gamemanager.charm += x;
+        gamemanager.Charm += x;
+    }
+    public void setw(int x)
+    {
+        gamemanager.Word = x;
+    }
+    public void addw(int x)
+    {
+        gamemanager.Word += x;
     }
 }

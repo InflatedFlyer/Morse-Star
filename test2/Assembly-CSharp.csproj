@@ -603,6 +603,7 @@
     <Compile Include="Assets\Example\城哥2.0\光块\MirrorSenceCh1Scene.cs" />
     <Compile Include="Assets\gamemanager.cs" />
     <Compile Include="Assets\ImageItem.cs" />
+    <Compile Include="Assets\Resources\menuimage\menuimage.cs" />
     <Compile Include="Assets\Resources\黎茗三视4\reflect.cs" />
     <Compile Include="Assets\Script\Audio_Fade.cs" />
     <Compile Include="Assets\Script\backorigin.cs" />
@@ -610,12 +611,19 @@
     <Compile Include="Assets\Script\BlockDrag.cs" />
     <Compile Include="Assets\Script\BlocksUpdate.cs" />
     <Compile Include="Assets\Script\buttonclick.cs" />
+    <Compile Include="Assets\Script\ChangeAccumulate.cs" />
+    <Compile Include="Assets\Script\ChangeBG.cs" />
+    <Compile Include="Assets\Script\ChangeButtonColor.cs" />
+    <Compile Include="Assets\Script\ChangeResponsePanel.cs" />
     <Compile Include="Assets\Script\close.cs" />
+    <Compile Include="Assets\Script\item.cs" />
     <Compile Include="Assets\Script\Lattice.cs" />
-    <Compile Include="Assets\Script\MCH.cs" />
+    <Compile Include="Assets\Script\mousechange.cs" />
+    <Compile Include="Assets\Script\playbox.cs" />
     <Compile Include="Assets\Script\quit.cs" />
     <Compile Include="Assets\Script\ScaleBarAnima.cs" />
     <Compile Include="Assets\Script\SceneFadeInOut.cs" />
+    <Compile Include="Assets\Script\SliderAnima.cs" />
     <Compile Include="Assets\Script\TestCustomLua.cs" />
     <Compile Include="Assets\Script\to2.cs" />
     <Compile Include="Assets\Script\toscenes.cs" />
@@ -624,6 +632,7 @@
     <None Include="Assets\07.Material\UIShaders\Gauss\Gauss.shader" />
     <None Include="Assets\01.Scenes\longroad\C#\Chapter15-FogWithNoise.shader" />
     <None Include="Assets\01.Scenes\主线\Dormitary\mart\Chapter12-Bloom.shader" />
+    <None Include="Assets\Resources\Material\diejia.shader" />
     <None Include="Assets\07.Material\UIShaders\Multiply\Multiply.shader" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>D:/GitHub/Morse-Star/test2/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>

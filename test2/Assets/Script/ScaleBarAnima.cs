@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class ScaleBarAnima : MonoBehaviour
 {
-    public int fullValue = 10;  //最大数值
-    public int nowValue = 10;    //当前数值
+    public int fullValue = 15;  //最大数值
+    public int nowValue = 6;    //当前数值
     public bool isx = true; //是否启用这个轴的缩放
     public bool isy = false;
     public bool isz = false;
@@ -22,8 +22,14 @@ public class ScaleBarAnima : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        aimScale = fullScale = transform.localScale;
-        nowValue = fullValue;
+        if (isx)
+            aimScale.x = fullScale.x * ((float)nowValue / fullValue);
+        if (isy)
+            aimScale.y = fullScale.y * ((float)nowValue / fullValue);
+        if (isz)
+            aimScale.z = fullScale.z * ((float)nowValue / fullValue);
+
+        transform.localScale = aimScale;
     }
 
     // Update is called once per frame
@@ -50,6 +56,20 @@ public class ScaleBarAnima : MonoBehaviour
         aimScale.y = fullScale.y * ((float)nowValue / fullValue);
         if(isz)
         aimScale.z = fullScale.z * ((float)nowValue / fullValue);
+
+        flag = true;
+    }
+
+    public void AddValue(string p)
+    {
+        nowValue += int.Parse(p);
+
+        if (isx)
+            aimScale.x = fullScale.x * ((float)nowValue / fullValue);
+        if (isy)
+            aimScale.y = fullScale.y * ((float)nowValue / fullValue);
+        if (isz)
+            aimScale.z = fullScale.z * ((float)nowValue / fullValue);
 
         flag = true;
     }
