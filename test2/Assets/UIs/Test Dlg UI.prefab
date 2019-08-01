@@ -1343,6 +1343,7 @@ GameObject:
   - component: {fileID: 4881295929452452123}
   - component: {fileID: 4881295929452452122}
   - component: {fileID: 7757484476912741551}
+  - component: {fileID: 6334010755599503754}
   m_Layer: 5
   m_Name: Test Dlg UI
   m_TagString: Untagged
@@ -1417,6 +1418,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f08b54d8168341d4da3d77dd28fd13e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!223 &6334010755599503754
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4881295929452452100}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
 --- !u!1 &4881295929683418019
 GameObject:
   m_ObjectHideFlags: 0
@@ -2328,7 +2350,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 261, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &853452357421844447
