@@ -630,6 +630,7 @@
     <Compile Include="Assets\Xunishijiexuanzhuankaiguan.cs" />
     <Compile Include="Assets\转圆.cs" />
     <None Include="Assets\07.Material\UIShaders\Gauss\Gauss.shader" />
+    <None Include="Assets\Script\TriangleShader.shader" />
     <None Include="Assets\01.Scenes\longroad\C#\Chapter15-FogWithNoise.shader" />
     <None Include="Assets\01.Scenes\主线\Dormitary\mart\Chapter12-Bloom.shader" />
     <None Include="Assets\Resources\Material\diejia.shader" />

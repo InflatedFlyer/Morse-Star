@@ -5,49 +5,73 @@ using UnityEngine;
 public class Audio_Fade : MonoBehaviour
 {
     private AudioSource audio1;
+    private AudioClip[] clip;
     private bool fin = false;
     private bool fout = false;
-
-    public float step=0.16f;
-
+    [HideInInspector] public Dictionary<string, int> list;
+    public float step=0.01f;
+    public float max = 1;
     // Start is called before the first frame update
     void Start()
     {
+        list = new Dictionary<string, int>();
+        list.Add("手机", 1);
+        list.Add("拖鞋", 2);
+        list.Add("车站",4);
         audio1 = this.gameObject.GetComponent<AudioSource>();
         audio1.volume = 0;
-    }
+        clip=Resources.LoadAll<AudioClip>("Music");
+        
+}
 
     // Update is called once per frame
     void Update()
     {
         if (fin)
         {
-            for (; audio1.volume < 1; audio1.volume += step)
+            audio1.volume += step;
+            if (audio1.volume >= max)
             {
-                if (audio1.volume > 1)
-                    audio1.volume = 1;
+                audio1.volume = max;
+                fin = false;
             }
-            fin = false;
         }
 
         if (fout)
         {
-            for (; audio1.volume > 0; audio1.volume -= step)
+            audio1.volume -= step;
+            if (audio1.volume<= 0)
             {
-                if (audio1.volume < 0)
-                    audio1.volume = 0;
+                audio1.volume = 0;
+                fout = false;
+                audio1.Stop();
             }
-            fout = false;
         }
     }
 
+
+    public void SetMax(string x)
+    {
+        max = int.Parse(x)*0.1f;
+    }
+    public void Setv(string x)
+    {
+        audio1.volume = int.Parse(x) * 0.01f;
+    }
     public void FadeIn(string str)
     {
+        int x;
+        x = list[str];
+        audio1.clip = clip[x];
         fin = true;
+        audio1.Play();
+        
     }
 
     public void FadeOut(string str)
     {
         fout = true;
     }
+
+
 }

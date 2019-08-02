@@ -15,8 +15,8 @@ public class SliderAnima : MonoBehaviour
     private bool flag;  //是否执行插值动画
     private bool isplus; //加减正负号
     private Transform pic; //子物体中上覆盖图片
+    private float mul;
 
-    private
 
 
     // Start is called before the first frame update
@@ -26,7 +26,7 @@ public class SliderAnima : MonoBehaviour
 
         Transform obj = transform.Find("Fill");
         pic = obj.Find("Image");
-
+        mul = Multiple;
     }
 
     // Update is called once per frame
@@ -36,17 +36,18 @@ public class SliderAnima : MonoBehaviour
         {
             this.GetComponent<Slider>().value = Mathf.Lerp(this.GetComponent<Slider>().value, aimValue, Percent);
             if (isplus)
-                pic.GetComponent<Image>().color = Color.Lerp(new Color(0.2f, 1, 0.2f, 1), Color.white, Multiple = Multiple * (1 + Multiple));
+                pic.GetComponent<Image>().color = Color.Lerp(new Color(0.2f, 1, 0.2f, 1), Color.white, mul = mul * (1 + mul));
             else
-                pic.GetComponent<Image>().color = Color.Lerp(new Color(1, 0.2f, 0.2f, 1), Color.white, Multiple = Multiple * (1 + Multiple));
+                pic.GetComponent<Image>().color = Color.Lerp(new Color(1, 0.2f, 0.2f, 1), Color.white, mul = mul * (1 + mul));
 
             if (Mathf.Abs(this.GetComponent<Slider>().value-aimValue) < Boundary)
             {
                 this.GetComponent<Slider>().value = aimValue;
-                if (Multiple >= 1)
+                if (mul >= 1)
                 {
                     pic.GetComponent<Image>().color = Color.white;
                     flag = false;
+                    mul = Multiple;
                 }
             }
         }
